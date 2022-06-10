@@ -22,6 +22,8 @@ import './App.css';
 import tokenABI from "./ContractArtifacts/IERC20.json";
 import { CollectionsOutlined } from "@mui/icons-material";
 
+import IPFSComponent from "./IPFS";
+
 
 const web3Modal = new Web3Modal({
   network: "ropsten",
@@ -218,6 +220,12 @@ function App() {
 
         </Grid>
 
+        <Grid item xs={12} sm={6} md={4} lg={4}>
+
+          <p> IPFS Upload Demo :  </p>
+          <IPFSComponent></IPFSComponent>
+
+        </Grid>
 
       </Grid>
 
